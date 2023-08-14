@@ -1,0 +1,40 @@
+.header {
+  border-top: 20px solid blue;
+  height:100px;
+  position: relative;
+  overflow: hidden;
+}
+.header:before,
+.header:after {
+  content: "";
+  vertical-align:top;
+  display: inline-block;
+  transform-origin: top right;
+  transform: skew(-40deg);
+}
+
+.header:before {
+  height: 100%;
+  width: 50%;
+  border-radius: 0 0 20px 0;
+  background: blue;
+}
+
+.header:after {
+  height: 20px;
+  width: 20px;
+  margin-left:-1px;
+  background: radial-gradient(circle at bottom right, transparent 68%, blue 73%);
+}
+
+
+/*to illustrate different values of skew*/
+.header:before,
+.header:after {
+  animation:change 2s linear infinite alternate;
+}
+
+@keyframes change{
+  from{transform: skew(0deg);}
+  top{transform: skew(-40deg);}
+}

@@ -1,0 +1,35 @@
+/* CSS used here will be applied after bootstrap.css */
+
+.navbar-header{
+    position:relative;
+}
+
+.navbar-header:before {
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    background: #e7e7e7;;
+    top: 0;
+    left: -9999px;
+    right: 0;
+    transform: skew(30deg);
+}
+.navbar-default{
+	background:black;
+}
+
+.navbar-brand{
+  	position: relative;
+	z-index: 10;
+
+}
+
+@media (max-width: 767px) {
+ .navbar-header:before {
+
+
+    left: -22px;
+    width: 100px;
+
+	}
+}
