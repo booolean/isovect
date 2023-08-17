@@ -81,11 +81,11 @@ body {
 
 
 
-   short{
-      width:3%;
-      padding:0;
-      box-sizing:border-box;
-      }
+.short{
+    width:3%;
+    padding:0;
+    box-sizing:border-box;
+    }
 
 /* Custom page CSS
 -------------------------------------------------- */
