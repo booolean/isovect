@@ -34,7 +34,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.indexImg {max-width:200px;}
+.indexImg {max-width:500px;}
 
 .fullbtn{
   display: block;
